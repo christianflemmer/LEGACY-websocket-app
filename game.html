@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Rock, Paper, Scissors</title>
+</head>
+<body>
+
+<h1>Welcome to the Rock Paper Scissors game!</h1>
+
+<hr>
+
+<div id="lblNickname">
+	<input id="nickname" type="text" name="txtNickname" placeholder="Enter your nickname here...">
+</div>
+
+<hr>
+
+<div class="container">
+	<h1 id="statusHeading" class=""> Make your choice ... </h1>
+	<div class="row">
+		<div class="col-lg-4">
+			<div class="option" id="rock">
+				<i class="fa fa-hand-rock-o gameIcons" aria-hidden="true"></i>
+			</div>
+		</div>
+		<div class="col-lg-4">
+			<div class="option"  id="paper">
+				<i class="fa fa-hand-paper-o gameIcons" aria-hidden="true"></i>
+			</div>
+		</div>
+		<div class="col-lg-4">
+			<div class="option" id="scissor">
+				<i class="fa fa-hand-scissors-o gameIcons" aria-hidden="true"></i>
+			</div>
+		</div>
+	</div>
+
+	<div class="hide resultIconsDiv" id="lose-icon">
+		<i class="fa fa-times-circle-o resultIcons" aria-hidden="true"></i>
+	</div>
+
+	<div class="hide resultIconsDiv" id="tie-icon">
+		<i class="fa fa-black-tie resultIcons" aria-hidden="true"></i>
+	</div>
+
+	<div class="hide resultIconsDiv" id="win-icon">
+		<i class="fa fa-check-circle-o resultIcons" aria-hidden="true"></i>
+	</div>
+	
+</body>
+
+	<!-- SERVER -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.slim.min.js"></script>
+	<!-- CLIENT -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- SCRIPT -->
+	<script src="script.js" type="text/javascript"></script>
+
+</html>
