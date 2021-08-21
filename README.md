@@ -1,5 +1,5 @@
 # NodeJSFinalProject
-Rock Paper Scissor multiplayer game using io-sockets.
+"Rock, paper, scissor" multiplayer game using websockets, developed during my 4th semester while studying at Copenhagen Business School of Design and Technology.
 
 
 
